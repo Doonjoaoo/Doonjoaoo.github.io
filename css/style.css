@@ -1,0 +1,75 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    color: #333;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+
+}
+
+body::before {
+    position: absolute;
+    content: "";
+    top: 0cm;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../image/minecraftbackgroud.png') no-repeat center top fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+header {
+    background-color: rgb(157, 151, 143);
+    color: azure;
+    padding: 10 px 0;
+    text-align: center;
+    height: 25px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    display: inline;
+    margin: 0px 15px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+main {
+    position: relative;
+    padding: 10px;
+    background-color: rgb(135, 132, 132);
+    border-radius: 10px;
+    margin: auto;
+    max-width: 800px;
+}
+
+footer {
+    background-color: rgb(157, 151, 143);
+    color: azure;
+    padding: 5 px 0;
+    text-align: center;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+}
+
+section#home img {
+    border-radius: 50%;
+    max-width: 100px;
+}
